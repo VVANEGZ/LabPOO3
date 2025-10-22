@@ -26,7 +26,11 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("");
+                    System.out.println("¡PRECIOS DE VACACIONES, APROVECHA YA!");
+                    System.out.println("1. Camiseta (75 tickets)");
+                    System.out.println("2. Sombrero (175 tickets)");
+                    System.out.println("3. Tenis (300 tickets)");
+                    break;
                 default:
                     System.out.println("Por favor escriba un valor valido.");
             }

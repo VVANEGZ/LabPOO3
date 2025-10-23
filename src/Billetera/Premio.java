@@ -27,7 +27,14 @@ public class Premio {
 
     @Override
     public String toString() {
-        return "Acaba de comprar un" + premio + '\'' +
-                " por " + tickets;
+        return "Acaba de comprar: " + premio +
+                " por " + getPrecioActual();
     }
+    public int getPrecioActual(){
+       if(BilleteraParque.getFestivo()){
+           return tickets/2;
+       }
+        return tickets;
+    }
+
 }

@@ -13,14 +13,21 @@ public class BilleteraParque {
     public int getTickets() {
         return tickets;
     }
-    public void setTickets(int tickets) {}
+    public int setTickets(int tickets) {
+        if(tickets>=0){
+            this.tickets=tickets;
+        }
+        return tickets;
+    }
 
-    public static boolean isFestivo() {
+    public static boolean getFestivo() {
+
         return festivo;
     }
 
-    public static void setFestivo(boolean festivo) {
-        BilleteraParque.festivo = festivo;
+
+    public static void setFestivo() {
+        festivo= !festivo;
     }
 
     //metodos
